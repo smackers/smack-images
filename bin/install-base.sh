@@ -19,3 +19,6 @@ for cmd in ${COMMANDS}
 do
   update-alternatives --install ${PREFIX}/bin/${cmd} ${cmd} ${PREFIX}/bin/${cmd}-${LLVM_VERSION} 20
 done
+
+apt-get clean
+rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

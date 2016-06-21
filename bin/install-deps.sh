@@ -40,3 +40,5 @@ ln -s ${PREFIX}/bin/z3 ${PREFIX}/lib/Corral/z3.exe
 echo '#!/bin/bash' > ${PREFIX}/bin/corral
 echo "mono ${PREFIX}/lib/Corral/corral.exe \$@" >> ${PREFIX}/bin/corral
 chmod u+x ${PREFIX}/bin/corral
+
+rm -rf ${TMP}/*

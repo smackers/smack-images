@@ -21,3 +21,5 @@ make install
 cd ${PREFIX}/bin
 mv boogie-saved boogie
 mv corral-saved corral
+
+rm -rf ${TMP}/*
