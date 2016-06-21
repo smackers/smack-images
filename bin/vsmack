@@ -1,0 +1,6 @@
+#!/bin/bash
+
+DIR=/tmp
+IMAGE=smackers/smack
+
+docker run --volume=$(pwd):${DIR} ${IMAGE} sh -c "cd ${DIR} && smack $@"
